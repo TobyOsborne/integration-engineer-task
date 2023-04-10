@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ruleset name="PSR2-Ruleset">
+    <rule ref="PSR2"/>
+
+	<!-- Exclude paths -->
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+		<exclude-pattern>*.blade.php</exclude-pattern>
+
+</ruleset>
