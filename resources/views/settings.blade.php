@@ -4,8 +4,8 @@
     </x-slot>
 	
 	@if(!$has_key)
-		<div>
-			<h1>{{__('views.new_user_title')}}</h1>
+		<div class="new-user">
+			<h2>{{__('views.new_user_title')}}</h2>
 			<p>{!!__('views.new_user_message')!!}</p>
 		</div>
 	@endif
@@ -25,7 +25,7 @@
 
 		<p>
 			<label for="api_key">{{ __('forms.api_key') }}</label>
-			<textarea id="api_key" name="api_key" placeholder="{{__('forms.api_key_placeholder')}}" >{{old('api_key',$has_key ? "**********" : "")}}</textarea>
+			<textarea rows="12" id="api_key" name="api_key" placeholder="{{__('forms.api_key_placeholder')}}" >{{old('api_key',$has_key ? "**********" : "")}}</textarea>
 		</p>
 
 		<p><button type="submit">{{__('forms.save')}}</button></p>
